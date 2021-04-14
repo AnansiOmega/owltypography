@@ -7,95 +7,26 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     mix-blend-mode: multiply;
+    width: 89vw;
     z-index: 100;
-}
-.owl-cont {
     position: absolute;
-    top:0;
-    left: 0;
-    z-index: -1;
+    top: 0%;
+    left: 0%;
+    background-size: contain;
+    background-position: 50% 50%;
 }
 
 
-.left-face {
-    position: absolute;
-    left: 118ch;
-    top: 13ch;
+.owl-svg svg {
     z-index: -100;
-}
-
-.left-face svg path  {
-    animation: write-words 4s ease-in forwards;
-    fill: black;
-    stroke: white;
-    stroke-width: .7px;
-    stroke-dasharray: 450;
-    stroke-dashoffset: 450;
-}
-
-
-@for $i from 1 through 100 {
-    .left-face svg path:nth-child(#{$i}) {
-        animation-delay: (#{$i*1.5s});
-    }
-}
-
-
-.right-face {
+    height:100vh;
+    width: 100vw;
     position: absolute;
-    left: 173ch;
-    top: 19ch;
-    z-index: -100;
+    top: 0%;
+    left: 0%;
 }
 
-.right-face svg path  {
-    animation: write-words 4s ease-in forwards;
-    fill: black;
-    stroke: white;
-    stroke-width: .7px;
-    stroke-dasharray: 450;
-    stroke-dashoffset: 450;
-}
-
-@for $i from 1 through 100 {
-    .right-face svg path:nth-child(#{$i}) {
-        animation-delay: (#{$i*1.5s});
-    }
-}
-
-.chest {
-    position: absolute;
-    left: 97ch;
-    top: 7ch;
-    z-index: -100;
-
-}
-
-.chest svg path  {
-    animation: write-words 4s ease-in forwards;
-    fill: black;
-    stroke: white;
-    stroke-width: .7px;
-    stroke-dasharray: 450;
-    stroke-dashoffset: 450;
-}
-
-
-@for $i from 1 through 100 {
-    .chest svg path:nth-child(#{$i}) {
-        animation-delay: (#{$i*1.5s});
-    }
-}
-
-.left-wing {
-    position: absolute;
-    left: 0ch;
-    top: 0ch;
-    background-size: 100vw 100vh; 
-    z-index: -100;
-}
-
-.left-wing svg path  {
+.owl-svg svg path  {
     animation: write-words 4s ease-in forwards;
     fill: black;
     filter: blur(1px);
@@ -105,35 +36,123 @@ body {
     stroke-dashoffset: 450;
 }
 
-
-@for $i from 1 through 100 {
-    .left-wing svg path:nth-child(#{$i}) {
-        animation-delay: (#{$i*1.5s});
+@for $i from 1 through 1000 {
+    .owl-svg svg path:nth-child(#{$i}) {
+        animation-delay: (#{$i*.5s});
     }
 }
 
-.right-wing {
-    position: absolute;
-    left: 212ch;
-    top: 0ch;
-    z-index: -100;
-}
+// .left-wing svg path  {
+//     animation: write-words 4s ease-in forwards;
+//     fill: black;
+//     filter: blur(1px);
+//     stroke: white;
+//     stroke-width: .7px;
+//     stroke-dasharray: 450;
+//     stroke-dashoffset: 450;
+// }
 
-.right-wing svg g path {
-    animation: write-words 4s ease-in forwards;
-    fill: black;
-    filter: blur(1px);
-    stroke: white;
-    stroke-width: .7px;
-    stroke-dasharray: 450;
-    stroke-dashoffset: 450;
-}
 
-@for $i from 1 through 100 {
-    .right-wing svg g path:nth-child(#{$i}) {
-        animation-delay: (#{$i*1.5s});
-    }
-}
+
+// .left-face {
+//     position: absolute;
+//     left: 118ch;
+//     top: 13ch;
+//     z-index: -100;
+// }
+
+// .left-face svg path  {
+//     animation: write-words 4s ease-in forwards;
+//     fill: black;
+//     stroke: white;
+//     stroke-width: .7px;
+//     stroke-dasharray: 450;
+//     stroke-dashoffset: 450;
+// }
+
+
+// @for $i from 1 through 100 {
+//     .left-face svg path:nth-child(#{$i}) {
+//         animation-delay: (#{$i*1.5s});
+//     }
+// }
+
+
+// .right-face {
+//     position: absolute;
+//     left: 173ch;
+//     top: 19ch;
+//     z-index: -100;
+// }
+
+// .right-face svg path  {
+//     animation: write-words 4s ease-in forwards;
+//     fill: black;
+//     stroke: white;
+//     stroke-width: .7px;
+//     stroke-dasharray: 450;
+//     stroke-dashoffset: 450;
+// }
+
+// @for $i from 1 through 100 {
+//     .right-face svg path:nth-child(#{$i}) {
+//         animation-delay: (#{$i*1.5s});
+//     }
+// }
+
+// .chest {
+//     position: absolute;
+//     left: 97ch;
+//     top: 7ch;
+//     z-index: -100;
+
+// }
+
+// .chest svg path  {
+//     animation: write-words 4s ease-in forwards;
+//     fill: black;
+//     stroke: white;
+//     stroke-width: .7px;
+//     stroke-dasharray: 450;
+//     stroke-dashoffset: 450;
+// }
+
+
+// @for $i from 1 through 100 {
+//     .chest svg path:nth-child(#{$i}) {
+//         animation-delay: (#{$i*1.5s});
+//     }
+// }
+
+// .left-wing {
+//     position: absolute;
+//     left: 0ch;
+//     top: 0ch;
+//     z-index: -100;
+// }
+
+// .right-wing {
+//     position: absolute;
+//     left: 212ch;
+//     top: 0ch;
+//     z-index: -100;
+// }
+
+// .right-wing svg g path {
+//     animation: write-words 4s ease-in forwards;
+//     fill: black;
+//     filter: blur(1px);
+//     stroke: white;
+//     stroke-width: .7px;
+//     stroke-dasharray: 450;
+//     stroke-dashoffset: 450;
+// }
+
+// @for $i from 1 through 100 {
+//     .right-wing svg g path:nth-child(#{$i}) {
+//         animation-delay: (#{$i*1.5s});
+//     }
+// }
 
 @keyframes write-words {
     to {

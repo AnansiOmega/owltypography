@@ -1,0 +1,24 @@
+{
+  "name": "owltypo",
+  "version": "1.0.0",
+  "description": "owl typography",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnansiOmega/owltypography.git"
+  },
+  "author": "Ignas Butautas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnansiOmega/owltypography/issues"
+  },
+  "homepage": "https://github.com/AnansiOmega/owltypography#readme"
+}
